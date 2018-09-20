@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Android源码打包 | C Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="ROM">
+    <meta name="description" content="Android源码打包window xp 系统准备 搭建java 环境、 下载签名工具：Auto-sign 下载压缩工具：7zip拆包在该文档“编辑源码”那块已经说明使用“make -jn otapackage”该编译命令生成更加通用的zip格式的 ROM包。拆包很简单，直接解压就行。  更改 下面是解压后文件夹内容：  boot.img文件，这是系统的镜像，包括Linux内核以及系统启动的一些基">
+<meta name="keywords" content="ROM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android源码打包">
+<meta property="og:url" content="http://zaijiangwangzhuan.com/2013/12/18/2013-12-18-Android源码打包/index.html">
+<meta property="og:site_name" content="C Blog">
+<meta property="og:description" content="Android源码打包window xp 系统准备 搭建java 环境、 下载签名工具：Auto-sign 下载压缩工具：7zip拆包在该文档“编辑源码”那块已经说明使用“make -jn otapackage”该编译命令生成更加通用的zip格式的 ROM包。拆包很简单，直接解压就行。  更改 下面是解压后文件夹内容：  boot.img文件，这是系统的镜像，包括Linux内核以及系统启动的一些基">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-21T03:13:52.460Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Android源码打包">
+<meta name="twitter:description" content="Android源码打包window xp 系统准备 搭建java 环境、 下载签名工具：Auto-sign 下载压缩工具：7zip拆包在该文档“编辑源码”那块已经说明使用“make -jn otapackage”该编译命令生成更加通用的zip格式的 ROM包。拆包很简单，直接解压就行。  更改 下面是解压后文件夹内容：  boot.img文件，这是系统的镜像，包括Linux内核以及系统启动的一些基">
+    
+        <link rel="alternate" type="application/atom+xml" title="C Blog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">微信号:caishen2048</h5>
+          <a href="mailto:634206017@qq.com" title="634206017@qq.com" class="mail">634206017@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/yscoder" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://www.weibo.com/ysweb" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                测试
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+   <!--    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>-->
+        <div class="flex-col header-title ellipsis">Android源码打包</div>
+        
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Android源码打包</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2013-12-18T08:46:00.000Z" itemprop="datePublished" class="page-time">
+  2013-12-18
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Android/">Android</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Android源码打包"><span class="post-toc-number">1.</span> <span class="post-toc-text">Android源码打包</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#window-xp-系统"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">window xp 系统</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#准备"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">准备</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#拆包"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">拆包</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#更改"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">更改</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#打包"><span class="post-toc-number">1.1.4.</span> <span class="post-toc-text">打包</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#签名"><span class="post-toc-number">1.1.5.</span> <span class="post-toc-text">签名</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#升级"><span class="post-toc-number">1.1.6.</span> <span class="post-toc-text">升级</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Linux-系统"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Linux  系统</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#准备-1"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">准备</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#更改-1"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">更改</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#打包-1"><span class="post-toc-number">1.2.3.</span> <span class="post-toc-text">打包</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#签名-1"><span class="post-toc-number">1.2.4.</span> <span class="post-toc-text">签名</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#升级-1"><span class="post-toc-number">1.2.5.</span> <span class="post-toc-text">升级</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#增量更新包打包"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">增量更新包打包</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#添加应用到Android-源码"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">添加应用到Android 源码</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-2013-12-18-Android源码打包"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Android源码打包</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2013-12-18 16:46:00" datetime="2013-12-18T08:46:00.000Z"  itemprop="datePublished">2013-12-18</time>
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="Android源码打包"><a href="#Android源码打包" class="headerlink" title="Android源码打包"></a>Android源码打包</h2><h3 id="window-xp-系统"><a href="#window-xp-系统" class="headerlink" title="window xp 系统"></a>window xp 系统</h3><h4 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h4><ol>
+<li>搭建java 环境、</li>
+<li>下载签名工具：Auto-sign</li>
+<li>下载压缩工具：7zip<h4 id="拆包"><a href="#拆包" class="headerlink" title="拆包"></a>拆包</h4>在该文档“编辑源码”那块已经说明使用“make -jn otapackage”<br>该编译命令生成更加通用的zip格式的 ROM包。<br>拆包很简单，直接解压就行。</li>
+</ol>
+<h4 id="更改"><a href="#更改" class="headerlink" title="更改"></a>更改</h4><p> 下面是解压后文件夹内容：</p>
+<ul>
+<li>boot.img文件，这是系统的镜像，包括Linux内核以及系统启动的一些基本文件。<br>META-INF目录，这里主要有系统更新脚本，路径是：META-INF/com/google/android/updater-script</li>
+<li>system/app目录，系统自带的应用程序都放在这个目录下，比如日历、联系人、gmail等，你可以把自己的apk文件放在该目录下，这样就可以在刷ROM的时候直接安装上</li>
+<li>system/bin目录，系统命令，可以通过adb shell登录后执行，比如top</li>
+<li>system/etc目录，类似linux的/etc目录</li>
+<li>system/font目录，字体</li>
+<li>system/framework目录，android框架，是java实现，在dalvik虚拟机下支持用户java开发的框架</li>
+<li>system/lib目录，android本地共享库，都是so文件，是c、c++编译的本地共享库</li>
+<li>system/media目录，一些媒体文件，比如bootanimation.zip，压缩包里面是一些png图，用于开机动画，替代这些可以改变开机画面，audio目录下是一些声音文件，用于铃声和通知等</li>
+</ul>
+<h4 id="打包"><a href="#打包" class="headerlink" title="打包"></a>打包</h4><p>  在META-INF 相同路径下，选中全部内容后右击用7zip打包该目录成为一个zip文件，并改名为update.zip</p>
+<h4 id="签名"><a href="#签名" class="headerlink" title="签名"></a>签名</h4><p>  将完成的update.zip 放入Auto-sign的目录中，运行Sign.bat 在根目录就会自动生存update_signed.zip。如果不签名android是不认的，recovery的时候会在校验ROM包的时候报错。</p>
+<h4 id="升级"><a href="#升级" class="headerlink" title="升级"></a>升级</h4><p>将update_signed.zip copy 至sdcard 根目录下，进入recovery 模式，选择update_signed.zip 升级即可。</p>
+<h3 id="Linux-系统"><a href="#Linux-系统" class="headerlink" title="Linux  系统"></a>Linux  系统</h3><h4 id="准备-1"><a href="#准备-1" class="headerlink" title="准备"></a>准备</h4><ol>
+<li>搭建java 环境、</li>
+<li>签名工具：需要signapk.jar testkey.x509.pem testkey.pk8三个文件。<br>  三个文件是由Android整个源代码编译完后会自动生成,路径如下:</li>
+</ol>
+<ul>
+<li>signapk.jar位于./out/host/linux-x86/framework/目录</li>
+<li>testkey.x509.pem，testkey.pk8位于./build/target/product/security/目录</li>
+</ul>
+<h4 id="更改-1"><a href="#更改-1" class="headerlink" title="更改"></a>更改</h4><p>   同window xp系统下的更改。</p>
+<h4 id="打包-1"><a href="#打包-1" class="headerlink" title="打包"></a>打包</h4><p>   在META-INF 相同路径下输入linux 指令<br>        zip -r update.zip ./*</p>
+<h4 id="签名-1"><a href="#签名-1" class="headerlink" title="签名"></a>签名</h4><p>  将签名工具所需3个文件copy到与update.zip 同一路径下，在linux下执行签名指令，生成update_sign.zip 文件包，此即为升级包。<br>签名指令:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar signapk.jar -w testkey.x509.pem testkey.pk8 update.zip update_sign.zip</span><br></pre></td></tr></table></figure></p>
+<h4 id="升级-1"><a href="#升级-1" class="headerlink" title="升级"></a>升级</h4><p>将update_signed.zip copy 至sdcard 根目录下，进入recovery 模式，选择update_sign.zip 升级即可。</p>
+<h3 id="增量更新包打包"><a href="#增量更新包打包" class="headerlink" title="增量更新包打包"></a>增量更新包打包</h3><p>步骤如下:</p>
+<ol>
+<li>建立2个文件夹目录：<br>mkdir ./META-INF/com/google/android/<br>mkdir ./system/app<br>注意：记得更改这2个目录及其子目录的权限，以免出现无法copy 文件的问题。</li>
+<li>在android/目录下添加2个文件，分别是update-binary 和updater-script。</li>
+</ol>
+<ul>
+<li>update-binary 在 /out/target/product/dkb/system/bin/ 目录下的updater 文件，直接将updater copy到 /META-INF/com/google/android/ ，并改名为update-binary 即可。</li>
+<li>updater-script 脚本文件需要自己编写(具体脚本语法请参考相关文档)，根据具体升级的内容的不同，编写的脚本也是不一样的。下面贴出升级系统app的脚本。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">ui_print(&quot;--------------------------------&quot;);</span><br><span class="line">ui_print(&quot;Mounting filesystem...&quot;);</span><br><span class="line">ui_print(&quot;--------------------------------&quot;);</span><br><span class="line"></span><br><span class="line">mount(&quot;ext4&quot;, &quot;EMMC&quot;, &quot;/dev/block/platform/msm_sdcc.1/by-name/system&quot;, &quot;/system&quot;);</span><br><span class="line">show_progress(0.1, 0);</span><br><span class="line">set_progress(1.000000);</span><br><span class="line">package_extract_dir(&quot;system/app&quot;,&quot;/system/app&quot;);</span><br><span class="line">show_progress(0.9, 5);</span><br><span class="line">ui_print(&quot;Updating System Finish....&quot;);</span><br><span class="line">unmount(&quot;/system&quot;);</span><br><span class="line"></span><br><span class="line">ui_print(&quot;--------------------------------&quot;);</span><br><span class="line">ui_print(&quot;         Update success!        &quot;);</span><br><span class="line">ui_print(&quot;--------------------------------&quot;);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ol start="3">
+<li>将你需要升级的apk文件copy 到./system/app/ 目录中。</li>
+<li>将META-INF 和 system 一起压缩成update.zip 包。  在META-INF 相同路径下输入linux 指令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ zip  -r  update.zip ./*</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>指令执行完成后，生成update.zip 压缩包</p>
+<ol start="5">
+<li><p>将update.zip 签名。<br>同上一章节ROM 在linux下打包签名</p>
+</li>
+<li><p>将update_sign.zip copy 至sdcard 根目录下，进入recovery 模式，选择update_sign.zip 升级即可。</p>
+</li>
+</ol>
+<h3 id="添加应用到Android-源码"><a href="#添加应用到Android-源码" class="headerlink" title="添加应用到Android 源码"></a>添加应用到Android 源码</h3><ol>
+<li>在和系统相同版本的SDK目录下开发自己的android应用.</li>
+<li>把开发的android工程放到源码的packages/apps/目录下</li>
+<li>在自己应用工程目录下添加Android.mk文件<br>下面是用SnailMusic 为例, Android.mk内容如下：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">LOCAL_PATH:= $(call my-dir)</span><br><span class="line">include $(CLEAR_VARS)</span><br><span class="line">#表示目标模式</span><br><span class="line">LOCAL_MODULE_TAGS := optional</span><br><span class="line">#引用了两个第三方jar包，定义jar库的引用名，可以任意取值；</span><br><span class="line">LOCAL_STATIC_JAVA_LIBRARIES := libhttpclient\</span><br><span class="line">                               Androidsupport</span><br><span class="line"></span><br><span class="line"># Build all java files in the java subdirectory</span><br><span class="line">LOCAL_SRC_FILES := $(call all-java-files-under, src)</span><br><span class="line"></span><br><span class="line">LOCAL_SDK_VERSION := current</span><br><span class="line"># 生成apk的名字</span><br><span class="line">LOCAL_PACKAGE_NAME := SnailMusic</span><br><span class="line">#编译一个需要platform key签名的APK</span><br><span class="line">LOCAL_CERTIFICATE := platform</span><br><span class="line"></span><br><span class="line">＃所包含的库</span><br><span class="line">include $(BUILD_PACKAGE)</span><br><span class="line"></span><br><span class="line">######################################################</span><br><span class="line">include $(CLEAR_VARS)</span><br><span class="line"># 指定prebuiltjar库的规则，格式：引用名:jar文件路径</span><br><span class="line">LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := libhttpclient:libs/commons-httpclient-3.1.jar\</span><br><span class="line">                                        androidsupport:libs/android-support-v4.jar</span><br><span class="line">LOCAL_MODULE_TAGS := optional</span><br><span class="line">include $(BUILD_MULTI_PREBUILT)</span><br><span class="line"></span><br><span class="line"># Use the folloing include to make our test apk.</span><br><span class="line">include $(call all-makefiles-under,$(LOCAL_PATH))</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>4 进入到&lt;android_src&gt;/build/target/product目录中，修改core.mk, sdk.mk文件，把自已的项目加入编译行列中。<br>5．最后进入到&lt;android_src&gt;源码根目录，全局编译</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+
+        
+        了解更多请关注公众号:在家手赚
+        
+    </div>
+    
+    <footer>
+        <a href="http://zaijiangwangzhuan.com">
+            <img src="/img/avatar.jpg" alt="微信号:caishen2048">
+            微信号:caishen2048
+        </a>
+    </footer>
+</blockquote>
+
+
+        <h2> 填写您的评论:</h2>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        打赏一下(长按二维码扫一扫)~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: false, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

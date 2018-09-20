@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Android开发工具秘籍 | C Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="开发工具">
+    <meta name="description" content="content{:toc}  1.无线调试运行 还在为在使用真机测试时，缺乏数据线而发愁吗？ 还为每次用数据线连接真机测试时，都得抽拔抽拔烦不胜烦  神器来了,Android ADB WIFI 插件 支持 Intellij / Android Studio ,这个是开源项目 源码地址 https://github.com/pedrovgs/AndroidWiFiADB  如何安装  Intell">
+<meta name="keywords" content="开发工具">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android开发工具秘籍">
+<meta property="og:url" content="http://zaijiangwangzhuan.com/2017/08/02/2017-08-02-Android开发工具秘籍/index.html">
+<meta property="og:site_name" content="C Blog">
+<meta property="og:description" content="content{:toc}  1.无线调试运行 还在为在使用真机测试时，缺乏数据线而发愁吗？ 还为每次用数据线连接真机测试时，都得抽拔抽拔烦不胜烦  神器来了,Android ADB WIFI 插件 支持 Intellij / Android Studio ,这个是开源项目 源码地址 https://github.com/pedrovgs/AndroidWiFiADB  如何安装  Intell">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-21T03:13:52.466Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Android开发工具秘籍">
+<meta name="twitter:description" content="content{:toc}  1.无线调试运行 还在为在使用真机测试时，缺乏数据线而发愁吗？ 还为每次用数据线连接真机测试时，都得抽拔抽拔烦不胜烦  神器来了,Android ADB WIFI 插件 支持 Intellij / Android Studio ,这个是开源项目 源码地址 https://github.com/pedrovgs/AndroidWiFiADB  如何安装  Intell">
+    
+        <link rel="alternate" type="application/atom+xml" title="C Blog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">微信号:caishen2048</h5>
+          <a href="mailto:634206017@qq.com" title="634206017@qq.com" class="mail">634206017@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/yscoder" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://www.weibo.com/ysweb" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                测试
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+   <!--    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>-->
+        <div class="flex-col header-title ellipsis">Android开发工具秘籍</div>
+        
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Android开发工具秘籍</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-08-02T08:00:00.000Z" itemprop="datePublished" class="page-time">
+  2017-08-02
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Android/">Android</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-无线调试运行"><span class="post-toc-number">1.</span> <span class="post-toc-text">1.无线调试运行</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-显示当前Acitivity"><span class="post-toc-number">2.</span> <span class="post-toc-text">2.显示当前Acitivity</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#亦可通过下方cmd-命令来显示-推荐有逼格"><span class="post-toc-number">2.0.1.</span> <span class="post-toc-text">亦可通过下方cmd 命令来显示 推荐有逼格</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-开发助手-——-方便切换开发者配置"><span class="post-toc-number">3.</span> <span class="post-toc-text">3. 开发助手 —— 方便切换开发者配置</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4-电脑端更改Hosts"><span class="post-toc-number">4.</span> <span class="post-toc-text">4.电脑端更改Hosts</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-抓包工具"><span class="post-toc-number">5.</span> <span class="post-toc-text">5.抓包工具</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#划重点-charles和-上面的switchHosts-一起使用可以实现手机非root-切换hosts"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">划重点: charles和 上面的switchHosts 一起使用可以实现手机非root 切换hosts</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#6-打包工具"><span class="post-toc-number">6.</span> <span class="post-toc-text">6.打包工具</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-2017-08-02-Android开发工具秘籍"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Android开发工具秘籍</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-08-02 16:00:00" datetime="2017-08-02T08:00:00.000Z"  itemprop="datePublished">2017-08-02</time>
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <ul>
+<li>content<br>{:toc}</li>
+</ul>
+<h3 id="1-无线调试运行"><a href="#1-无线调试运行" class="headerlink" title="1.无线调试运行"></a>1.无线调试运行</h3><blockquote>
+<p>还在为在使用真机测试时，缺乏数据线而发愁吗？</p>
+<p>还为每次用数据线连接真机测试时，都得抽拔抽拔烦不胜烦</p>
+</blockquote>
+<p>神器来了,Android ADB WIFI 插件 支持 Intellij / Android Studio ,这个是开源项目 源码地址 <a href="https://github.com/pedrovgs/AndroidWiFiADB" target="_blank" rel="noopener">https://github.com/pedrovgs/AndroidWiFiADB</a></p>
+<ul>
+<li>如何安装</li>
+</ul>
+<p>Intellij / Android Studio: Preferences/Settings-&gt;Plugins-&gt;Browse Repositories-&gt;搜索Android ADB WIFI</p>
+<ul>
+<li>如何使用</li>
+</ul>
+<ol>
+<li>将调试手机通过USB 连接上电脑.</li>
+<li>点击Intellij / Android Studio 刚安装的 Android ADB WIFI 按钮</li>
+<li>此时会出现 “Device *** connected” 提示</li>
+</ol>
+<p>Ok！！！下面拔掉你的数据线，运行APP看看效果。</p>
+<p>当然 如果手机root了，可以在应用市场搜索 wifi adb 下载安装</p>
+<h3 id="2-显示当前Acitivity"><a href="#2-显示当前Acitivity" class="headerlink" title="2.显示当前Acitivity"></a>2.显示当前Acitivity</h3><blockquote>
+<p>有一天老板要你把应用某个界面的文字放大一点 位置移动一下，然这个模块又不是你做的，    是不是一脸闷 怎么快速定位当前界面的Activity呢</p>
+</blockquote>
+<p>神器来了， 显示当前顶端的Activity，快速定位到当前界面。 链接地址:<a href="https://github.com/fashare2015/ActivityTracker" target="_blank" rel="noopener">https://github.com/fashare2015/ActivityTracker</a></p>
+<h5 id="亦可通过下方cmd-命令来显示-推荐有逼格"><a href="#亦可通过下方cmd-命令来显示-推荐有逼格" class="headerlink" title="亦可通过下方cmd 命令来显示 推荐有逼格"></a>亦可通过下方cmd 命令来显示 推荐有逼格</h5><ul>
+<li>查看当前Activity ：adb shell “dumpsys window w &#124; grep name=”</li>
+<li>查看当前栈顶的Activity ：adb shell “dumpsys activity &#124; grep  mFocusedActivity”</li>
+<li>查看当前栈顶的Activity的Fragment ：adb shell dumpsys activity your.package.name</li>
+</ul>
+<h3 id="3-开发助手-——-方便切换开发者配置"><a href="#3-开发助手-——-方便切换开发者配置" class="headerlink" title="3. 开发助手 —— 方便切换开发者配置"></a>3. 开发助手 —— 方便切换开发者配置</h3><p>Trinea 大神佳作，在此不过多介绍，详情请看：</p>
+<p><a href="http://zhushou.360.cn/detail/index/soft_id/3644614" target="_blank" rel="noopener">Android 应用开发调试利器——开发助手，数十倍效率提升</a></p>
+<h3 id="4-电脑端更改Hosts"><a href="#4-电脑端更改Hosts" class="headerlink" title="4.电脑端更改Hosts"></a>4.电脑端更改Hosts</h3><blockquote>
+<p>有时候需要更换hosts 来实现内外网切换</p>
+</blockquote>
+<p>SwitchHosts! 是一个管理、切换多个 hosts 方案的工具。它是一个免费开源的软件<br>下载地址: <a href="http://www.xiazaiba.com/html/23970.html" target="_blank" rel="noopener">http://www.xiazaiba.com/html/23970.html</a></p>
+<h3 id="5-抓包工具"><a href="#5-抓包工具" class="headerlink" title="5.抓包工具"></a>5.抓包工具</h3><blockquote>
+<p>有一天 测试部门过来说 这个界面某个数据有问题, 你想看一下 服务器传过来的数据是咋样的? 还在通过调试方法看log 得到</p>
+</blockquote>
+<p>Charles 在做移动开发时，我们为了调试与服务器端的网络通讯协议，常常需要截取网络封包来分析。支持MAC和Windows</p>
+<h4 id="划重点-charles和-上面的switchHosts-一起使用可以实现手机非root-切换hosts"><a href="#划重点-charles和-上面的switchHosts-一起使用可以实现手机非root-切换hosts" class="headerlink" title="划重点: charles和 上面的switchHosts 一起使用可以实现手机非root 切换hosts"></a>划重点: charles和 上面的switchHosts 一起使用可以实现手机非root 切换hosts</h4><h3 id="6-打包工具"><a href="#6-打包工具" class="headerlink" title="6.打包工具"></a>6.打包工具</h3><blockquote>
+<p>我们在开发Android时，经常会遇到的一个问题就是多渠道打包，这个是很烦躁的问题，因为如果使用AndroidStudio中的productFlavors去进行生成多渠道包，这个是非常耗时的。</p>
+</blockquote>
+<p>美团之前提供了一个创建以渠道号为名的空文件夹塞到apk中, 现在这种方法在7.0里面失效了 现在美团又提供了一个写id的方法</p>
+<p><a href="https://tech.meituan.com/android-apk-v2-signature-scheme.html" target="_blank" rel="noopener">美团官方技术博客</a></p>
+<p><a href="https://github.com/Meituan-Dianping/walle" target="_blank" rel="noopener">美团打包github</a></p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+
+        
+        了解更多请关注公众号:在家手赚
+        
+    </div>
+    
+    <footer>
+        <a href="http://zaijiangwangzhuan.com">
+            <img src="/img/avatar.jpg" alt="微信号:caishen2048">
+            微信号:caishen2048
+        </a>
+    </footer>
+</blockquote>
+
+
+        <h2> 填写您的评论:</h2>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        打赏一下(长按二维码扫一扫)~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: false, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

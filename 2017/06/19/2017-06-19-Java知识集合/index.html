@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Java知识集合 | C Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="面试">
+    <meta name="description" content="content{:toc}  接口和抽象类的意义抽象类一般用于抽象出共有特性比如 亚洲人和人接口一般用于某种特殊 操作的特性 比如女人生娃   JAVA GC（回收）原理JAVA 通过GC 确认对象是否被其他引用 确定是否收集该对象 触发的条件（时间）1.GC在优先级最低的线程中运行 所以在应用程序空闲的时候被调用2.当JAVA堆内存不足的时候 对谁回收把内存分为几块，年轻化 老年块， 对年轻块">
+<meta name="keywords" content="面试">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java知识集合">
+<meta property="og:url" content="http://zaijiangwangzhuan.com/2017/06/19/2017-06-19-Java知识集合/index.html">
+<meta property="og:site_name" content="C Blog">
+<meta property="og:description" content="content{:toc}  接口和抽象类的意义抽象类一般用于抽象出共有特性比如 亚洲人和人接口一般用于某种特殊 操作的特性 比如女人生娃   JAVA GC（回收）原理JAVA 通过GC 确认对象是否被其他引用 确定是否收集该对象 触发的条件（时间）1.GC在优先级最低的线程中运行 所以在应用程序空闲的时候被调用2.当JAVA堆内存不足的时候 对谁回收把内存分为几块，年轻化 老年块， 对年轻块">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-21T03:13:52.463Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Java知识集合">
+<meta name="twitter:description" content="content{:toc}  接口和抽象类的意义抽象类一般用于抽象出共有特性比如 亚洲人和人接口一般用于某种特殊 操作的特性 比如女人生娃   JAVA GC（回收）原理JAVA 通过GC 确认对象是否被其他引用 确定是否收集该对象 触发的条件（时间）1.GC在优先级最低的线程中运行 所以在应用程序空闲的时候被调用2.当JAVA堆内存不足的时候 对谁回收把内存分为几块，年轻化 老年块， 对年轻块">
+    
+        <link rel="alternate" type="application/atom+xml" title="C Blog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">微信号:caishen2048</h5>
+          <a href="mailto:634206017@qq.com" title="634206017@qq.com" class="mail">634206017@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/yscoder" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://www.weibo.com/ysweb" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                测试
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+   <!--    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>-->
+        <div class="flex-col header-title ellipsis">Java知识集合</div>
+        
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Java知识集合</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-06-19T08:00:00.000Z" itemprop="datePublished" class="page-time">
+  2017-06-19
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java/">Java</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#接口和抽象类的意义"><span class="post-toc-number">1.</span> <span class="post-toc-text">接口和抽象类的意义</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#JAVA-GC（回收）原理"><span class="post-toc-number">2.</span> <span class="post-toc-text">JAVA GC（回收）原理</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#触发的条件（时间）"><span class="post-toc-number">2.0.1.</span> <span class="post-toc-text">触发的条件（时间）</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#对谁回收"><span class="post-toc-number">2.0.2.</span> <span class="post-toc-text">对谁回收</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#减少GC开销的措施"><span class="post-toc-number">2.0.3.</span> <span class="post-toc-text">减少GC开销的措施</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#JAVA-反射原理"><span class="post-toc-number">3.</span> <span class="post-toc-text">JAVA 反射原理</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#volatile"><span class="post-toc-number">4.</span> <span class="post-toc-text">volatile</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#强引用-软引用-弱引用-虚引用"><span class="post-toc-number">5.</span> <span class="post-toc-text">强引用 软引用 弱引用 虚引用</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#String-StringBuffer-与StringBuilder的区别"><span class="post-toc-number">6.</span> <span class="post-toc-text">String StringBuffer 与StringBuilder的区别</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#用过哪些集合类有哪些"><span class="post-toc-number">7.</span> <span class="post-toc-text">用过哪些集合类有哪些</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#ArrayList-LinkedList-Vector的区别"><span class="post-toc-number">8.</span> <span class="post-toc-text">ArrayList,LinkedList Vector的区别</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Thread中sleep-和-wait-区别"><span class="post-toc-number">9.</span> <span class="post-toc-text">Thread中sleep 和 wait 区别</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#排序算法"><span class="post-toc-number">10.</span> <span class="post-toc-text">排序算法</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-2017-06-19-Java知识集合"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Java知识集合</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-06-19 16:00:00" datetime="2017-06-19T08:00:00.000Z"  itemprop="datePublished">2017-06-19</time>
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <ul>
+<li>content<br>{:toc}</li>
+</ul>
+<h3 id="接口和抽象类的意义"><a href="#接口和抽象类的意义" class="headerlink" title="接口和抽象类的意义"></a>接口和抽象类的意义</h3><p>抽象类一般用于抽象出共有特性比如 亚洲人和人<br>接口一般用于某种特殊 操作的特性 比如女人生娃  </p>
+<h3 id="JAVA-GC（回收）原理"><a href="#JAVA-GC（回收）原理" class="headerlink" title="JAVA GC（回收）原理"></a>JAVA GC（回收）原理</h3><p>JAVA 通过GC 确认对象是否被其他引用 确定是否收集该对象</p>
+<h5 id="触发的条件（时间）"><a href="#触发的条件（时间）" class="headerlink" title="触发的条件（时间）"></a>触发的条件（时间）</h5><p>1.GC在优先级最低的线程中运行 所以在应用程序空闲的时候被调用<br>2.当JAVA堆内存不足的时候</p>
+<h5 id="对谁回收"><a href="#对谁回收" class="headerlink" title="对谁回收"></a>对谁回收</h5><p>把内存分为几块，年轻化 老年块， 对年轻块使用效率较高的算法 如果对象经过几轮都没被回收就进入老年块 采用不同的算法回收</p>
+<h5 id="减少GC开销的措施"><a href="#减少GC开销的措施" class="headerlink" title="减少GC开销的措施"></a>减少GC开销的措施</h5><ol>
+<li>减少临时对象的使用</li>
+<li>对象不用的时候设置为null</li>
+<li>对于操作string 尽量用stringbuffer</li>
+<li>少用静态对象变量</li>
+<li>能用基本内形用基本内形</li>
+</ol>
+<h3 id="JAVA-反射原理"><a href="#JAVA-反射原理" class="headerlink" title="JAVA 反射原理"></a>JAVA 反射原理</h3><p><a href="http://www.jianshu.com/p/3968ffabdf9d" target="_blank" rel="noopener">参考链接</a></p>
+<h3 id="volatile"><a href="#volatile" class="headerlink" title="volatile"></a>volatile</h3><h3 id="强引用-软引用-弱引用-虚引用"><a href="#强引用-软引用-弱引用-虚引用" class="headerlink" title="强引用 软引用 弱引用 虚引用"></a>强引用 软引用 弱引用 虚引用</h3><ul>
+<li>强引用: 不会被回收 即使当前内存不足</li>
+<li>软引用SoftReference: 内存足够继续使用，当内存不足时会回收 比如图片加载框架</li>
+<li>弱引用WeakReference: JVM(Java 虚拟机)进行垃圾回收时 无论内存是否充足就会被回收<br>比如Handler持有Activity</li>
+<li>虚拟用: </li>
+</ul>
+<p>对象经常使用就使用软引用，如果不被使用的可能性更大 就是用弱引用</p>
+<h3 id="String-StringBuffer-与StringBuilder的区别"><a href="#String-StringBuffer-与StringBuilder的区别" class="headerlink" title="String StringBuffer 与StringBuilder的区别"></a>String StringBuffer 与StringBuilder的区别</h3><p>String 是不可变的对象 ,StringBuffer和 StringBuilder底层是char[]数组实现的，StringBuffer是线程安全 StringBuilder是线程不安全</p>
+<h3 id="用过哪些集合类有哪些"><a href="#用过哪些集合类有哪些" class="headerlink" title="用过哪些集合类有哪些"></a>用过哪些集合类有哪些</h3><p>数组 和 链表</p>
+<h3 id="ArrayList-LinkedList-Vector的区别"><a href="#ArrayList-LinkedList-Vector的区别" class="headerlink" title="ArrayList,LinkedList Vector的区别"></a>ArrayList,LinkedList Vector的区别</h3><p>ArrayList 基于动态数组的数据结构  get set有优势  线程不同步不过性能好<br>LinkedList 基于链表的数据结构  新增和删除有优势<br>Vector 基于数据的数据结构  线程同步</p>
+<h3 id="Thread中sleep-和-wait-区别"><a href="#Thread中sleep-和-wait-区别" class="headerlink" title="Thread中sleep 和 wait 区别"></a>Thread中sleep 和 wait 区别</h3><p>sleep 不会释放对象所 wait会释放对象所<br>sleep 不会出让系统资源 wait可以占有<br>sleep 需要指定一个睡眠时间 </p>
+<h3 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h3><table>
+<thead>
+<tr>
+<th>排序算法</th>
+<th>思想</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>冒泡排序</td>
+<td>两个数比较大小，较大的数下沉，较小的数冒起来</td>
+</tr>
+<tr>
+<td>选择排序</td>
+<td>在长度为N的无序数组中，第i++次遍历n-i个数，找到最小的数值与i元素交换</td>
+</tr>
+<tr>
+<td>插入排序</td>
+<td>假定前n-1个数已经排好序，现在将第n个数插到前面的有序数列中</td>
+</tr>
+<tr>
+<td>希尔排序</td>
+<td>某一增量分为若干子序列 对子序列插排 然后减小增量再插排</td>
+</tr>
+<tr>
+<td>快速排序</td>
+<td>从数列中取一个数 小的放左边大的放右边，再对左右两边重复这个操作</td>
+</tr>
+<tr>
+<td>归并排序</td>
+<td></td>
+</tr>
+<tr>
+<td>堆排序</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a href="http://www.jianshu.com/p/ae97c3ceea8d" target="_blank" rel="noopener">参考链接</a></p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+
+        
+        了解更多请关注公众号:在家手赚
+        
+    </div>
+    
+    <footer>
+        <a href="http://zaijiangwangzhuan.com">
+            <img src="/img/avatar.jpg" alt="微信号:caishen2048">
+            微信号:caishen2048
+        </a>
+    </footer>
+</blockquote>
+
+
+        <h2> 填写您的评论:</h2>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        打赏一下(长按二维码扫一扫)~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: false, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

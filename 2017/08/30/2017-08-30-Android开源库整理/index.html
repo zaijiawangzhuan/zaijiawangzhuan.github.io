@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Android开源库整理 | C Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="第三方">
+    <meta name="description" content="content{:toc}  图片加载库 (解决网络, 文件, res, assets等图片的获取, 解析, 展示, 缓存等需求…)     名称 概要 详情     *Picasso Github大神推荐的强大的图片下载和缓存库 Square 开源的项目,主导者是 JakeWharton.   *Glide Google推荐的图片加载和缓存的库 专注于平滑滚动时的流畅加载, Google开源项">
+<meta name="keywords" content="第三方">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android开源库整理">
+<meta property="og:url" content="http://zaijiangwangzhuan.com/2017/08/30/2017-08-30-Android开源库整理/index.html">
+<meta property="og:site_name" content="C Blog">
+<meta property="og:description" content="content{:toc}  图片加载库 (解决网络, 文件, res, assets等图片的获取, 解析, 展示, 缓存等需求…)     名称 概要 详情     *Picasso Github大神推荐的强大的图片下载和缓存库 Square 开源的项目,主导者是 JakeWharton.   *Glide Google推荐的图片加载和缓存的库 专注于平滑滚动时的流畅加载, Google开源项">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-21T03:13:52.468Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Android开源库整理">
+<meta name="twitter:description" content="content{:toc}  图片加载库 (解决网络, 文件, res, assets等图片的获取, 解析, 展示, 缓存等需求…)     名称 概要 详情     *Picasso Github大神推荐的强大的图片下载和缓存库 Square 开源的项目,主导者是 JakeWharton.   *Glide Google推荐的图片加载和缓存的库 专注于平滑滚动时的流畅加载, Google开源项">
+    
+        <link rel="alternate" type="application/atom+xml" title="C Blog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">微信号:caishen2048</h5>
+          <a href="mailto:634206017@qq.com" title="634206017@qq.com" class="mail">634206017@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/yscoder" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://www.weibo.com/ysweb" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                测试
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+   <!--    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>-->
+        <div class="flex-col header-title ellipsis">Android开源库整理</div>
+        
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Android开源库整理</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-08-30T08:00:00.000Z" itemprop="datePublished" class="page-time">
+  2017-08-30
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Android/">Android</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#图片加载库"><span class="post-toc-number">1.</span> <span class="post-toc-text">图片加载库</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#图片处理库"><span class="post-toc-number">2.</span> <span class="post-toc-text">图片处理库</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#网络编程"><span class="post-toc-number"></span> <span class="post-toc-text">网络编程</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#网络加载框架"><span class="post-toc-number">1.</span> <span class="post-toc-text">网络加载框架</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#动画"><span class="post-toc-number"></span> <span class="post-toc-text">动画</span></a>
+        </nav>
+    </aside>
+
+
+<article id="post-2017-08-30-Android开源库整理"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Android开源库整理</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-08-30 16:00:00" datetime="2017-08-30T08:00:00.000Z"  itemprop="datePublished">2017-08-30</time>
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <ul>
+<li>content<br>{:toc}</li>
+</ul>
+<h3 id="图片加载库"><a href="#图片加载库" class="headerlink" title="图片加载库"></a>图片加载库</h3><blockquote>
+<p>(解决网络, 文件, res, assets等图片的获取, 解析, 展示, 缓存等需求…)</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>概要</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/square/picasso" target="_blank" rel="noopener">*Picasso</a></td>
+<td>Github大神推荐的强大的图片下载和缓存库</td>
+<td>Square 开源的项目,主导者是 <a href="https://github.com/JakeWharton" target="_blank" rel="noopener">JakeWharton</a>.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bumptech/glide" target="_blank" rel="noopener">*Glide</a></td>
+<td>Google推荐的图片加载和缓存的库</td>
+<td>专注于平滑滚动时的流畅加载, Google开源项目, 2014年Google I/O 上被推荐</td>
+</tr>
+<tr>
+<td><a href="https://github.com/facebook/fresco" target="_blank" rel="noopener">*Fresco</a></td>
+<td>Facebook推荐的的Android图片加载库</td>
+<td>自动管理图片的加载和图片的缓存.Facebook 在2015年上半年开源的图片加载库</td>
+</tr>
+<tr>
+<td><a href="https://github.com/nostra13/Android-Universal-Image-Loader" target="_blank" rel="noopener">*Android-Universal-Image-Loader</a></td>
+<td>早期广泛使用的开源图片加载库</td>
+<td>强大又灵活的Android库, 用于加载,缓存,显示图片.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mcxiaoke/android-volley" target="_blank" rel="noopener">Volley</a></td>
+<td>2013年Google I/O推荐的网络通讯框架</td>
+<td>使用volley加载网络图片，主要用到其中的ImageLoader, NetworkImageView类, 注意它不仅仅是个图片加载库.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/etao-open-source/cube-sdk" target="_blank" rel="noopener">Cube-sdk</a></td>
+<td>轻量级的Android开发框架</td>
+<td>高效方便地加载网络图片, 更简易地处理网络API请求</td>
+</tr>
+</tbody>
+</table>
+<h3 id="图片处理库"><a href="#图片处理库" class="headerlink" title="图片处理库"></a>图片处理库</h3><blockquote>
+<p>(解决图片缩放, 裁剪, 平移, 旋转等需求)</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>概要</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/boycy815/PinchImageView" target="_blank" rel="noopener">PinchImageView</a></td>
+<td>国人写的, 可能是体验最好的图片手势控件</td>
+<td>支持双击放大，双击缩小,超出边界会回弹, 滑动惯性，不同分辨率无缝切换，可与ViewPager结合使用。 star:360</td>
+</tr>
+<tr>
+<td><a href="https://github.com/alexvasilkov/GestureViews" target="_blank" rel="noopener">GestureViews</a></td>
+<td>包含ImageView的自定义FrameLayout</td>
+<td>项目目的是让图片的查看尽可能流畅平滑, 让开发者更加方便地集成到自己的应用中, 支持手势控制和动画 star:582</td>
+</tr>
+<tr>
+<td><a href="https://github.com/chrisbanes/PhotoView" target="_blank" rel="noopener">*PhotoView</a></td>
+<td>致力于帮助开发者高效的创建可缩放的ImageView</td>
+<td>重写ImageView的实现, 支持多点触摸的图片缩放 star:4705</td>
+</tr>
+<tr>
+<td><a href="https://github.com/davemorrissey/subsampling-scale-image-view" target="_blank" rel="noopener">subsampling-scale-image-view</a></td>
+<td>一个Android自定义图片视图, 专为图片画廊设计</td>
+<td>丰富的配置选项, 更方便的实现图片的手势缩放, 旋转, 平移. 无损展示大图, 完美的地嵌入画廊, 地图等.可显示大图(地图, 建筑设计图)等而不造成OutOfMemoryErrors(OOM内存溢出异常) star:1137</td>
+</tr>
+<tr>
+<td><a href="https://github.com/MikeOrtiz/TouchImageView" target="_blank" rel="noopener">TouchImageView</a></td>
+<td>一个ImageView的拓展类</td>
+<td>支持ImageView所有功能, 添加了平移, 缩放, 拖拽, 滑动, 双击缩放等动画.star:1252</td>
+</tr>
+<tr>
+<td><a href="https://github.com/sephiroth74/ImageViewZoom" target="_blank" rel="noopener">ImageViewZoom</a></td>
+<td>自定义ImageView控件</td>
+<td>一个可以缩放, 平移的自定义ImageView控件. star:1080</td>
+</tr>
+</tbody>
+</table>
+<h2 id="网络编程"><a href="#网络编程" class="headerlink" title="网络编程"></a>网络编程</h2><h3 id="网络加载框架"><a href="#网络加载框架" class="headerlink" title="网络加载框架"></a>网络加载框架</h3><blockquote>
+<p>解决各种协议(GET, POST, PUT, HEAD, DETELE…)的网络数据的获取及请求, 支持异步,同步请求; 文件多线程下载断点续传, 上传; 请求自动重试, gzip压缩, Cookies自动解析并持久化. 数据的缓存. 目标是让网络请求更方便, 简介, 高效, 稳定.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>概要</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://square.github.io/retrofit/" target="_blank" rel="noopener">*Retrofit2.0</a></td>
+<td>以接口/注解的形式定义请求和响应</td>
+<td>Square 开源的项目. 是一套RESTful架构的Android(Java)客户端实现，基于注解，提供JSON to POJO(Plain Ordinary Java Object,简单Java对象)，POJO to JSON，网络请求(POST，GET,PUT，DELETE等)封装。 Jake Wharton大神力荐. 本身的网络核心可以替换. 如Apache HTTP client, URL connection, OKHttp等, 数据解析核心也可以替换如Gson, Jackson, fastjson, xStream等. 力求用最少的代码, 实现最强大的功能. <a href="http://square.github.io/retrofit/" target="_blank" rel="noopener">官方主页</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/square/okhttp" target="_blank" rel="noopener">*okhttp</a></td>
+<td>一个为安卓和java应用诞生的Http+SPDY的网络处理库</td>
+<td>square开源项目. a. 支持HTTP, HTTPS, HTTP/2.0, and SPDY协议 b. 自动缓存数据, 节省流量, c.内部自动GZIP压缩内容.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/loopj/android-async-http" target="_blank" rel="noopener">android-async-http</a></td>
+<td>一个异步的AndroidHttp库</td>
+<td>比较经典的网络请求库, 基于Apache的HttpClient库实现, 但是由于AndroidM(6.0)去除了对HttpClient相关API, 意味着google不再推荐使用.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mcxiaoke/android-volley" target="_blank" rel="noopener">Volley</a></td>
+<td>一个能让Android的网络请求更简单快捷的Http库</td>
+<td><a href="https://android.googlesource.com/platform/frameworks/volley" target="_blank" rel="noopener">官方地址, 需翻墙</a> Volley集成了AsyncHttpClient和Universal-Image-Loader的优点，既可以像AsyncHttpClient一样非常简单地进行HTTP通信，也可以像Universal-Image-Loader一样轻松加载网络上的图片。但是对大数据量的网络操作如文件的下载支持较差</td>
+</tr>
+</tbody>
+</table>
+<h2 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h2><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>概要</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/airbnb/lottie-android" target="_blank" rel="noopener">Lottie</a></td>
+<td>Airbnb</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>概要</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://code.google.com/archive/p/gifview2/downloads" target="_blank" rel="noopener">gifview </a></td>
+<td>Airbnb</td>
+</tr>
+</tbody>
+</table>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+
+        
+        了解更多请关注公众号:在家手赚
+        
+    </div>
+    
+    <footer>
+        <a href="http://zaijiangwangzhuan.com">
+            <img src="/img/avatar.jpg" alt="微信号:caishen2048">
+            微信号:caishen2048
+        </a>
+    </footer>
+</blockquote>
+
+
+        <h2> 填写您的评论:</h2>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        打赏一下(长按二维码扫一扫)~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: false, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

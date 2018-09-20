@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>AndroidROM开发笔记 | C Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="ROM">
+    <meta name="description" content="网站备份Android ROM开源的网站: 小米 CM 深度 驱动下载 android google服务包  其他如何修改系统默认字体大小修改这个默认值，可以在下面这个文件中进行修改在alps/frameworks/base/core/java/android/content/res/Configuration.java文件中如下public void setToDefaults() 这个方法中进">
+<meta name="keywords" content="ROM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AndroidROM开发笔记">
+<meta property="og:url" content="http://zaijiangwangzhuan.com/2014/01/05/2014-01-05-AndroidROM开发笔记/index.html">
+<meta property="og:site_name" content="C Blog">
+<meta property="og:description" content="网站备份Android ROM开源的网站: 小米 CM 深度 驱动下载 android google服务包  其他如何修改系统默认字体大小修改这个默认值，可以在下面这个文件中进行修改在alps/frameworks/base/core/java/android/content/res/Configuration.java文件中如下public void setToDefaults() 这个方法中进">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-21T03:13:52.461Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AndroidROM开发笔记">
+<meta name="twitter:description" content="网站备份Android ROM开源的网站: 小米 CM 深度 驱动下载 android google服务包  其他如何修改系统默认字体大小修改这个默认值，可以在下面这个文件中进行修改在alps/frameworks/base/core/java/android/content/res/Configuration.java文件中如下public void setToDefaults() 这个方法中进">
+    
+        <link rel="alternate" type="application/atom+xml" title="C Blog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">微信号:caishen2048</h5>
+          <a href="mailto:634206017@qq.com" title="634206017@qq.com" class="mail">634206017@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/yscoder" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://www.weibo.com/ysweb" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                测试
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+   <!--    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>-->
+        <div class="flex-col header-title ellipsis">AndroidROM开发笔记</div>
+        
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">AndroidROM开发笔记</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2014-01-05T08:46:00.000Z" itemprop="datePublished" class="page-time">
+  2014-01-05
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Android/">Android</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#网站备份"><span class="post-toc-number">1.</span> <span class="post-toc-text">网站备份</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Android-ROM开源的网站"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Android ROM开源的网站:</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#其他"><span class="post-toc-number">2.</span> <span class="post-toc-text">其他</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#如何修改系统默认字体大小"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">如何修改系统默认字体大小</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#so库缺失拷贝到相应目录"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">so库缺失拷贝到相应目录</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-2014-01-05-AndroidROM开发笔记"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">AndroidROM开发笔记</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2014-01-05 16:46:00" datetime="2014-01-05T08:46:00.000Z"  itemprop="datePublished">2014-01-05</time>
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="网站备份"><a href="#网站备份" class="headerlink" title="网站备份"></a>网站备份</h2><h3 id="Android-ROM开源的网站"><a href="#Android-ROM开源的网站" class="headerlink" title="Android ROM开源的网站:"></a>Android ROM开源的网站:</h3><ul>
+<li><a href="https://github.com/MiCode" target="_blank" rel="noopener">小米</a></li>
+<li><a href="https://github.com/CyanogenMod/" target="_blank" rel="noopener">CM</a></li>
+<li><a href="https://github.com/ShenduOS" target="_blank" rel="noopener">深度</a></li>
+<li><a href="https://developers.google.com/android/nexus/drivers" target="_blank" rel="noopener">驱动下载</a></li>
+<li><a href="http://goo.im/gapps" target="_blank" rel="noopener">android google服务包</a></li>
+</ul>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="如何修改系统默认字体大小"><a href="#如何修改系统默认字体大小" class="headerlink" title="如何修改系统默认字体大小"></a>如何修改系统默认字体大小</h3><p>修改这个默认值，可以在下面这个文件中进行修改<br>在alps/frameworks/base/core/java/android/content/res/Configuration.java文件中如下<br>public void setToDefaults() 这个方法中进行修改<br>如果默认要改成特大字体，请改为1.15f，然后重新build framework.jar这个模块即可<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">public void setToDefaults() &#123;</span><br><span class="line">       fontScale = 1.15f; //normal value is 1</span><br><span class="line">       mcc = mnc = 0;</span><br><span class="line"></span><br><span class="line">       注意：Settings中系统的字体大小，在/packages/apps/Settings/res/values/arrays.xml文件中的”entryvalues_font_size”这个tag中分别有定义对应的数值</span><br><span class="line">       Small:0.9</span><br><span class="line">        Normal:1.0</span><br><span class="line">        Large:1.1</span><br><span class="line">        Extra Large:1.15</span><br></pre></td></tr></table></figure></p>
+<p>所以如果要修改默认值，直接在上面那个方法中修改fontScale 为对应的数值即可(注意带上f，表示为float类型)</p>
+<h3 id="so库缺失拷贝到相应目录"><a href="#so库缺失拷贝到相应目录" class="headerlink" title="so库缺失拷贝到相应目录"></a>so库缺失拷贝到相应目录</h3><ul>
+<li><p>拷贝SO文件示例</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">PRODUCT_COPY_FILES += \</span><br><span class="line">vendor/cos/prebuilt/common/google/optional/face/lib/libfacelock_jni.so:system/lib/libfacelock_jni.so</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>拷贝文件夹</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">google_system_lib_files := $(shell ls vendor/cos/prebuilt/common/google/system/lib )</span><br><span class="line">PRODUCT_COPY_FILES += $(foreach file, $(google_system_lib_files), \</span><br><span class="line">    vendor/cos/prebuilt/common/google/system/lib/$(file):system/lib/$(file))</span><br><span class="line"></span><br><span class="line">google_option_face_vendor_files := $(shell find vendor/cos/prebuilt/common/google/optional/face/vendor -name *.bin | sed &apos;s/vendor\/cos\/prebuilt\/common\/google\/optional\/face\/vendor/vendor/&apos; )</span><br><span class="line">PRODUCT_COPY_FILES += $(foreach file, $(google_option_face_vendor_files), \</span><br><span class="line">    vendor/cos/prebuilt/common/google/optional/face/$(file):system/$(file))</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+
+        
+        了解更多请关注公众号:在家手赚
+        
+    </div>
+    
+    <footer>
+        <a href="http://zaijiangwangzhuan.com">
+            <img src="/img/avatar.jpg" alt="微信号:caishen2048">
+            微信号:caishen2048
+        </a>
+    </footer>
+</blockquote>
+
+
+        <h2> 填写您的评论:</h2>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        打赏一下(长按二维码扫一扫)~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: false, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
