@@ -23,7 +23,7 @@
     <published>2018-09-20T05:48:05.000Z</published>
     <updated>2018-09-20T06:04:41.965Z</updated>
     
-    <content type="html"><![CDATA[<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/2018/09/20/shenqian/test.jpg" alt="" title="">                </div>                <div class="image-caption"></div>            </figure>]]></content>
+    <content type="html"><![CDATA[<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="test.jpg" alt="" title="">                </div>                <div class="image-caption"></div>            </figure>]]></content>
     
     <summary type="html">
     

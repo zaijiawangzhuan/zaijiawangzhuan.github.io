@@ -491,8 +491,8 @@
     }, false);
 
     menuToggle.addEventListener(even, function (e) {
-        Blog.toggleMenu(true);
-        e.preventDefault();
+    /*    Blog.toggleMenu(true);
+        e.preventDefault();*/
     }, false);
 
     menuOff.addEventListener(even, function () {
